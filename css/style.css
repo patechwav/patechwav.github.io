@@ -347,3 +347,40 @@ h1 {
     font-size: 24px;
   }
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+#about p,
+#about ul,
+#about li {
+  color: var(--muted);
+}
+
+
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  transition: all 0.2s ease;
+}
+
+.inline-link:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
