@@ -65,3 +65,16 @@ function initHeroSlider() {
     }
   });
 }
+
+
+
+function loadComponent(containerId, filePath) {
+  fetch(filePath)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(containerId).innerHTML = data;
+    });
+}
+
+loadComponent("latest-releases-container", "components/latest-releases.html");
+loadComponent("featured-container", "components/featured.html");
