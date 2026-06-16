@@ -78,3 +78,4 @@ function loadComponent(containerId, filePath) {
 
 loadComponent("latest-releases-container", "components/latest-releases.html");
 loadComponent("featured-container", "components/featured.html");
+loadComponent("sets-container", "components/sets.html");
